@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    
+    <section id="menu">
+        <div class="logo">
+            <img src="images/branchX Logo.svg" alt="logo">
+        </div>
+
+        <div class="items">
+            <li><a href="#"><img src="images/Dashboard.svg" alt="dashboard" /> Dashboard</a></li>
+            <li><a href="#"><img src="images/Employee Card.svg" alt="Employees" /> Employees</a></li>
+            <li><a href="#"><img src="images/Payroll.svg" alt="Payroll" /> Payroll</a></li>
+            <li><a href="#"><img src="images/Reports.svg" alt="Reports" /> Reports</a></li>
+            <li><a href="#"><img src="images/User Guide.svg" alt="Support" /> Support</a></li>
+            <li>
+                <div id="bottom-menu">
+                    <div class="profile">
+                        <img src="images/wallet.svg">
+                        <h3>My Profile</h3>
+                    </div>
+                    <a id="setting-menu" href="#"><img src="images/wallet.svg" alt="wallet"></a>
+                </div>
+            </li>
+
+
+            <!-- <li><i class="fa fa-car"></i><a href="#">Dashboard</a></li>
+            <li><i class="fa fa-car"></i><a href="#">Employees</a></li>
+            <li><i class="fa fa-car"></i><a href="#">Payroll</a></li>
+            <li><i class="fa fa-car"></i><a href="#">Reports</a></li>
+            <li><i class="fa fa-car"></i><a href="#">Support</a></li> -->
+
+        </div>
+ 
+    </section>
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div>
+                    <i id="close-btn" class="fa fa-bars"></i>
+                </div>
+                <div class="page-title">
+                    <h2>branchX</h2>
+                    <h4>branchX</h4>
+                </div>
+            </div>
+            
+            <div class="left-icon">
+                <a href="#"><img src="images/wallet.svg" alt="wallet"></a>
+                <a href="#"><img src="images/notification.svg" alt="notification"></a>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        $('#close-btn').click(function(){
+            $('#menu').toggleClass("active");
+        })
+    </script>
+
+</body>
+</html>
